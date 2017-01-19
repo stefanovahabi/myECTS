@@ -17,7 +17,7 @@
                 <div class="tab-pane active" id="tab1">
                     <p>Deine Ersten Schritte in myECTS sind grandios. Erstelle dir einen Account, verwalte deine Termin und organisiere deinen Vorlesungsplan!</p>
                 </div>
-                <div class="tab-pane" id="tab3>
+                <div class="tab-pane" id="tab3">
                     <p>MyECTS ist hpts. über die Startseite konfigurierbar. Eingeloggt erscheinen dir vier Symbole, ein Orner mit einem Zahnrad, die sog. Einstellungen,
                     in welchen du deine Hochschule bzw. deinen Studiengang auswählst und im Anschluss Fächer belegen kannst. Wenn du mit einem Fach abschließt, kannst du es bei den
                     Einstellung mit einer Note abmelden. Des Weiteren kannst du einmalig den Kalender für dich aktivieren. Die Stoppuhr dient dafür, dass du beim Lernen die Zeit messen und im Anschluss in dein ECTS-Konto buchen kannst.

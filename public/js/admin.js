@@ -166,24 +166,24 @@ function search(){
 
 function such(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("http://localhost:8000/searchajax/"+x.value));
+    $("#result4").html($("#result4").load("/searchajax/"+x.value));
    // alert("ww");
 }
 
 function suchhs(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("http://localhost:8000/searchhs/"+x.value));
+    $("#result4").html($("#result4").load("/searchhs/"+x.value));
     // alert("ww");
 }
 
 function suchsg(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("http://localhost:8000/searchsg/"+x.value));
+    $("#result4").html($("#result4").load("/searchsg/"+x.value));
     // alert("ww");
 }
 function suchfa(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("http://localhost:8000/searchfa/"+x.value));
+    $("#result4").html($("#result4").load("/searchfa/"+x.value));
     // alert("ww");
 }
 

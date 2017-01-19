@@ -19,18 +19,20 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active page-scroll"><a href="{{ url('/loggedin') }}">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="page-scroll"><a href="{{ url('/loggedin') }}">Home</a></li>
                             <li class="page-scroll" id="navibar"><a href="{{ url('/about') }}">about</a></li>
                             <li class="page-scroll"><a href="{{ url('/howtouse') }}">howtouse</a></li>
-                            <li class="page-scroll"><a href="support.html">support</a></li>
-                            <li class="page-scroll"><a href="{{ url('/register1') }}">register</a></li>
-                            <li class="page-scroll"><a href="{{ url('/vergessen') }}">forgot password</a></li>
+                            @if(!(Auth::guest()))
                            <li> <a href="{{ url('/logout') }}"
                                onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                 Logout
                             </a>
                            </li>
+                                @else
+                                <li class="page-scroll"><a href="{{ url('/register1') }}">register</a></li>
+
+                            @endif
 
 
                         </ul>

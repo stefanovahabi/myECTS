@@ -15,14 +15,7 @@ Route::get('/register1', function () {
     return view('register1');
 });
 
-Route::get('/start', function () {
-    return view('startseite');
-});
 
-
-Route::get('/vergessen', function () {
-    return view('vergessen');
-});
 
 Route::get('/vergessen1', function () {
     return view('vergessen1');
@@ -55,7 +48,7 @@ Route::get('/loggedin', function () {
 });
 
 Route::get('/home', function () {
-    return view('myECTS_Startseite');
+   return Redirect::to('/loggedin');
 });
 /*Route::get('/konto', function(){
     $facher = App\fach::all();
@@ -163,13 +156,6 @@ Route::get('/searchfa/{input}','SearchController@searchFach');
 
 
 
-Route::get('/test', function(){
-    return view('test');
-});
-
-Route::get('/homeadmin', function () {
-    return view('myECTS_AFter_Login_Admin');
-});
 
 Route::get('admin', function () {
     echo 'ADMIN';
@@ -182,10 +168,7 @@ Route::get('/stoppuhr', function () {
     if(Auth::guest()){
         return Redirect::to('/');
     }
-    $meineFacher = App\userhassubjectsrelation::all();
-    $facher = App\fach::all();
-
-    return view('Stoppuhr', compact('meineFacher','facher'));
+    return view('Stoppuhr');
 });
 
 Route::get('/support', function () {

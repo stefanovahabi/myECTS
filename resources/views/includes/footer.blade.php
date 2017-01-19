@@ -19,8 +19,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                         <ul class="nav navbar-nav">
-                            <li class="page-scroll" id="navibar1"><a href="impressum.html">Impressum</a></li>
-                            <li class="page-scroll"><a href="Datenschutz.html">Datenschutz</a></li>
+                            <li class="page-scroll" id="navibar1"><a href="{{ url('/impressum') }}">Impressum</a></li>
+                            <li class="page-scroll"><a href="{{ url('/datenschutz') }}">Datenschutz</a></li>
                             <li class="page-scroll"><a title="Twitter" href="https://twitter.com/" target="_blank" class="pi-social-icon-facebook pi-shadow"><img width="30" height="30" src="/img/Twitter.png" alt="browser lädt soziales Netzwerk Twitter nicht"></a></li>
 
                             <li class="page-scroll">                            <div id="fb" class="fb-share-button" data-href="https://www.facebook.com/HTWGkonstanz/?fref=ts" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2FHTWGkonstanz%2F%3Ffref%3Dts&amp;src=sdkpreparse">Teilen</a></div>

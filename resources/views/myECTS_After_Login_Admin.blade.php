@@ -172,7 +172,7 @@
                         }
                     });
 
-                    $('#dummy').load('http://localhost:8000/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
+                    $('#dummy').load('http://myectsapp.herokuapp.com/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
                         $('#dummy').html(" ");
 
                         var newString = result.split("-");
@@ -253,7 +253,7 @@
                         }
                     });
 
-                    $('#dummy').load('http://localhost:8000/saveKalender', {tagID: $(x).attr('id'), user:$('#HierUser').val(), monat: monat, wert:eingabe} ,function(result) {
+                    $('#dummy').load('http://myectsapp.herokuapp.com/saveKalender', {tagID: $(x).attr('id'), user:$('#HierUser').val(), monat: monat, wert:eingabe} ,function(result) {
                         $('#dummy').html(" ");
 
                     });
@@ -329,7 +329,7 @@
                         }
                     });
 
-                    $('#dummy').load('http://localhost:8000/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
+                    $('#dummy').load('http://myectsapp.herokuapp.com/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
                         $('#dummy').html(" ");
 
                         var newString = result.split("-");
@@ -465,7 +465,7 @@
                         }
                     });
 
-                    $('#dummy').load('http://localhost:8000/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
+                    $('#dummy').load('http://myectsapp.herokuapp.com/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
                         $('#dummy').html(" ");
 
                         var newString = result.split("-");

@@ -75,9 +75,9 @@ Route::get('/konto', 'kontoController@start');
 
 Route::post('/kontoajax','kontoController@ajaxBuchen');
 Route::post('/kontoajaxwert','kontoController@ajaxWertHolen');
-Route::post('/getMonth','searchController@getMonth');
-Route::post('/saveKalender','searchController@saveKalender');
-Route::post('/createKalender','searchController@createKalender');
+Route::post('/getMonth','SearchController@getMonth');
+Route::post('/saveKalender','SearchController@saveKalender');
+Route::post('/createKalender','SearchController@createKalender');
 
 
 Route::get('/controlpanel', function(){

@@ -16,7 +16,7 @@ function getStudiengang(hochschulID, id){
 //alert(hochschulID);
 user = id;
 
-    $('#result').html($('#result').load("http://localhost:8000/settingsajax/"+hochschulID));
+    $('#result').html($('#result').load("http://myectsapp.herokuapp.com/settingsajax/"+hochschulID));
 }
 
 function saveStudi(id){
@@ -84,7 +84,7 @@ function activateKalender(id){
         }
     });
 
-    $('#result').load('http://localhost:8000/createKalender', {facher: $('#selection1').val(), user: id} ,function(result) {
+    $('#result').load('http://myectsapp.herokuapp.com/createKalender', {facher: $('#selection1').val(), user: id} ,function(result) {
         $('#result').html(result);
     });
     $('#activate').hide();
@@ -101,7 +101,7 @@ function saveRelation(id){
         if(typeof($('#selection1').val()) !== "undefined" && $('#selection1').val() !== null && $('#selection1').val() !== "" && $('#selection1').val().length >= 1) {
 
 
-            $('#result').load('http://localhost:8000/relationajax', {
+            $('#result').load('http://myectsapp.herokuapp.com/relationajax', {
                 facher: $('#selection1').val(),
                 user: id
             }, function (result) {
@@ -132,7 +132,7 @@ function abmeldenRelation(id){
     if(typeof($('#selectionAb').val()) !== "undefined" && $('#selectionAb').val() !== null && $('#selectionAb').val() !== "" && $('#selectionAb').val().length >= 1 && $('#note').val().length >= 1) {
 
 
-        $('#result').load('http://localhost:8000/deleterelationajax', {
+        $('#result').load('http://myectsapp.herokuapp.com/deleterelationajax', {
             facher: $('#selectionAb').val(),
             note:$('#note').val(),
             user: id

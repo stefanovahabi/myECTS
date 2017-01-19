@@ -111,7 +111,7 @@ function ajaxStundenplan(){
         }
     });
 
-    $('#result').load('http://localhost:8000/stundenplanajax', {felder: felder, user: nutzerid} ,function(result) {
+    $('#result').load('http://myectsapp.herokuapp.com/stundenplanajax', {felder: felder, user: nutzerid} ,function(result) {
         $('#result').html(result);
     });
     //$('#result').html(ausgabe);

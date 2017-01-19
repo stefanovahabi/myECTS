@@ -32,7 +32,7 @@ function hochschule(){
         $('#selectionZuordnung').hide();
 
 
-        $("#result3").html("<input id='search1' type='search' name='search1' placeholder='Suche Hochschule (updated)' onkeyup='suchhs(this)'>");
+        $("#result3").html("<input id='search1' type='search' name='search1' placeholder='Suche Hochschule' onkeyup='suchhs(this)'>");
 
 
     }
@@ -166,7 +166,7 @@ function search(){
 
 function such(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("/searchajax/"+x.value));
+    $("#result4").html($("#result4").load("http://myectsapp.herokuapp.com/searchajax/"+x.value));
    // alert("ww");
 }
 
@@ -178,12 +178,12 @@ function suchhs(x){
 
 function suchsg(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("/searchsg/"+x.value));
+    $("#result4").html($("#result4").load("http://myectsapp.herokuapp.com/searchsg/"+x.value));
     // alert("ww");
 }
 function suchfa(x){
     //alert(x.value);
-    $("#result4").html($("#result4").load("/searchfa/"+x.value));
+    $("#result4").html($("#result4").load("http://myectsapp.herokuapp.com/searchfa/"+x.value));
     // alert("ww");
 }
 

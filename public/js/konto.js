@@ -12,7 +12,7 @@ function ajaxKonto() {
             }
         });
 
-        $('#ergebnis').load('http://localhost:8000/kontoajax', {
+        $('#ergebnis').load('http://myectsapp.herokuapp.com/kontoajax', {
             zeit: $("#zeitbuchen").val(),
             user: $("#user").val(),
             fach: $("#selection").val()
@@ -42,7 +42,7 @@ function gibWert(ects){
     if(!wirdAngezeigt) {
 
 
-        $('#ergebnis').load('http://localhost:8000/kontoajaxwert', {
+        $('#ergebnis').load('http://myectsapp.herokuapp.com/kontoajaxwert', {
             user: $("#user").val(),
             fach: $("#selection").val()
         }, function (result) {
@@ -75,7 +75,7 @@ function gibWert(ects){
             }
         });
 
-        $('#ergebnis').load('http://localhost:8000/kontoajaxwert', {
+        $('#ergebnis').load('http://myectsapp.herokuapp.com/kontoajaxwert', {
             user: $("#user").val(),
             fach: $("#selection").val()
         }, function (result) {

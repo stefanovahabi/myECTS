@@ -247,7 +247,7 @@
                     });
 
                     $('#dummy').load('http://myectsapp.herokuapp.com/saveKalender', {tagID: $(x).attr('id'), user:$('#HierUser').val(), monat: monat, wert:eingabe} ,function(result) {
-                        $('#dummy').html(result);
+                        $('#dummy').html(" ");
 
                     });
 
@@ -323,10 +323,10 @@
                     });
 
                     $('#dummy').load('http://myectsapp.herokuapp.com/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
-                        $('#dummy').html(result);
+                        $('#dummy').html(" ");
 
                         var newString = result.split("-");
-                        $('#dummy').html(newString[30]);
+                        $('#dummy').html(" ");
 
 
                         var string ="<table>";
@@ -459,10 +459,10 @@
                     });
 
                     $('#dummy').load('http://myectsapp.herokuapp.com/getMonth', {monat: monat, user:$('#HierUser').val()} ,function(result) {
-                        $('#dummy').html(result);
+                        $('#dummy').html(" ");
 
                         var newString = result.split("-");
-                        $('#dummy').html(newString[30]);
+                        $('#dummy').html(" ");
 
 
                         var string ="<table>";

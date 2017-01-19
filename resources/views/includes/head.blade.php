@@ -1,6 +1,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<script type="text/javascript" src="//www.google.com/jsapi"></script>
 <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>

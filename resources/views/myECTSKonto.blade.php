@@ -65,7 +65,7 @@
             <form id="form" action="/platzhalter" method="post">
 
                 <div id="contUmBuchen">
-                    <div id="ergebnis">Hier bitte result</div>
+                    <div id="ergebnis"></div>
 
                     <div>
                         @if(is_null($x) || empty($x))

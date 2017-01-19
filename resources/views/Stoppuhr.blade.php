@@ -76,7 +76,7 @@
                 _timerID = 0;
                 _pausetime = parseInt(new Date().getTime()/1000);
             }
-            alert("insgesamt " + insgesamt + " s. also + " + Math.round((insgesamt/60)*100)/100 + " min ");
+            //alert("insgesamt " + insgesamt + " s. also + " + Math.round((insgesamt/60)*100)/100 + " min ");
         }
 
         function ContinueClock() {

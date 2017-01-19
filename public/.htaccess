@@ -17,4 +17,5 @@
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    LoadModule rewrite_module modules/mod_rewrite.so
 </IfModule>

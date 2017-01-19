@@ -12,7 +12,7 @@
     <div class="row" id="kek">
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="logo">
-            <img src="img/Unbenannt.png" alt="Browser nicht aktuell genug" class="center-block"/>
+            <img src="img/Unbenannt.PNG" alt="Browser nicht aktuell genug" class="center-block"/>
         </div>
 
     </div>
